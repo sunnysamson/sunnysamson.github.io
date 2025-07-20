@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-photo">
-            <h1>John Doe</h1>
-            <p class="tagline">Web Developer & Creative Problem Solver</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </section>
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Data Scientist | Machine Learning Engineer | AI Enthusiast</p>
+    </div>
+  </header>
 
-    <!-- About Me -->
-    <section class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>Hey there! 👋 I'm John, a passionate self-taught developer with a love for building clean, efficient, and user-friendly web experiences. When I'm not coding, you'll find me hiking, reading sci-fi, or experimenting with new recipes in the kitchen.</p>
-            <div class="personal-details">
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> San Francisco, CA</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> john.doe@example.com</p>
-                <p><i class="fas fa-graduation-cap"></i> <strong>Education:</strong> Computer Science, Stanford University</p>
-            </div>
-        </div>
-    </section>
+  <nav>
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Skills -->
-    <section class="skills">
-        <h2>My Toolkit</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-            </div>
-        </div>
-    </section>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m a data scientist passionate about turning raw data into impactful solutions. I specialize in machine learning, NLP, and data visualization.
+    </p>
+  </section>
 
-    <!-- Projects -->
-    <section class="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-card">
-            <h3>Personal Website</h3>
-            <p>A responsive portfolio built with pure HTML/CSS.</p>
-            <a href="#" class="btn">View Live</a>
-            <a href="#" class="btn btn-ghost">Code <i class="fab fa-github"></i></a>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
+  <section id="projects" class="container">
+    <h2>Projects</h2>
 
-    <footer>
-        <p>© 2024 John Doe. Built with ❤️ and GitHub Pages.</p>
-    </footer>
+    <div class="project">
+      <h3>Churn Prediction Model</h3>
+      <p>Built an end-to-end ML pipeline to predict customer churn using logistic regression, decision trees, and ensemble methods. Deployed via Flask + Heroku.</p>
+      <a href="https://github.com/yourusername/churn-prediction" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Sentiment Analysis on Tweets</h3>
+      <p>Used NLP and transformers to classify sentiment from tweets. Visualized trends and topic models with word clouds and PCA plots.</p>
+      <a href="https://github.com/yourusername/twitter-sentiment" target="_blank">GitHub Repo</a>
+    </div>
+
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
