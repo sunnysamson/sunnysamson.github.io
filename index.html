@@ -375,6 +375,151 @@
             </div>
         </section>
 
+<style>
+  :root {
+    --light-bg: #f9f9f9;
+    --light-text: #111;
+    --dark-bg: #1a1a1a;
+    --dark-text: #f5f5f5;
+    --accent: #4f46e5;
+    --skill-bg: #e0e0e0;
+    --skill-dark-bg: #333;
+  }
+
+  body {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+
+  .section-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+    border-radius: 12px;
+    background: var(--skill-bg);
+    transition: background 0.3s;
+  }
+
+  body.dark-mode .skill-category {
+    background: var(--skill-dark-bg);
+  }
+
+  .skill-category h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-size: 1.2rem;
+  }
+
+  .skill-item {
+    margin-bottom: 1rem;
+  }
+
+  .skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .progress-bar {
+    background: #dcdcdc;
+    border-radius: 8px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+
+  .progress {
+    background-color: var(--accent);
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .toggle-btn {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 0.4rem 1rem;
+    background: var(--accent);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+</style>
+
+<!-- Theme Toggle Button -->
+<button class="toggle-btn" onclick="document.body.classList.toggle('dark-mode')">
+  <i class="fas fa-moon"></i> Toggle Theme
+</button>
+
+<section id="skills">
+  <div class="section-container">
+    <h2><i class="fas fa-code"></i> Technical Skills</h2>
+    <div class="skills-container">
+      
+      <div class="skill-category">
+        <h3><i class="fas fa-brain"></i> Data Science & ML</h3>
+        <div class="skill-item"><div class="skill-name"><span>Supervised Learning</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>Deep Learning (CNN, RNN)</span><span>85%</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>Feature Engineering</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming</h3>
+        <div class="skill-item"><div class="skill-name"><span>Python (Pandas, Sklearn)</span><span>95%</span></div><div class="progress-bar"><div class="progress" style="width:95%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>SQL / MySQL</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>Bash / Terraform</span><span>75%</span></div><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-database"></i> Data Engineering</h3>
+        <div class="skill-item"><div class="skill-name"><span>Airflow / dbt</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>AWS S3 / MySQL</span><span>85%</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+        <div class="skill-item"><div class="skill-name"><span>AWS (Lambda, S3)</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>Terraform (IaC)</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-music"></i> Audio & Music ML</h3>
+        <div class="skill-item"><div class="skill-name"><span>Librosa / Demucs</span><span>85%</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>Whisper / MusicNet</span><span>75%</span></div><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+        <div class="skill-item"><div class="skill-name"><span>Matplotlib / Seaborn</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-tools"></i> Tools & Soft Skills</h3>
+        <div class="skill-item"><div class="skill-name"><span>React / Git / Cloud9</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>Research / Documentation</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
         
